@@ -15,7 +15,9 @@ body {
   display: grid;
   grid-template-columns:  repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  
   align-items: center;
+  justify-items: center;
   &__image{
     grid-column: 2;
     grid-row: 1;
@@ -38,8 +40,16 @@ body {
   &__mail{
     grid-column: 2;
     grid-row: 3;
-    
     text-align: center;
+  
+    color:wheat;
+    background-color: rgb(7, 138, 224);
+    
+    border-radius: 60%;
+    width: 200px;
+    height: 40px;
+    padding-top: 20px;
+    text-decoration: none;
   }
 }
 
@@ -103,9 +113,36 @@ body {
 .projects{
   background-color: whitesmoke;
   min-height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:repeat(3, 1fr) ;
+  align-items: center;
+  justify-items: center;
+  &__title{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  &__description{
+    grid-row: 2;
+    grid-column: 2;
+  }
+
 
 }
 .contact{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:repeat(3, 1fr) ;
   min-height: 400px;
   background-color: rgb(218, 218, 233);
+  align-items: center;
+  justify-items: center;
+  &__title{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  &__description{
+   grid-row: 2;
+   grid-column: 2; 
+  }
 }
