@@ -49,6 +49,7 @@ body {
     }
     
   }
+  
 
   .hero__image__hello::before{
       
@@ -64,10 +65,16 @@ body {
     bottom: -19px;
   
 }
+a:-webkit-any-link {
+  color: rgb(4, 179, 170);
+  cursor: pointer;
+  text-decoration: none;
+}
   
   &__description{
     grid-column: 2;
     grid-row: 2;
+    
   }
   .hero__description::before{
     content: "{";
