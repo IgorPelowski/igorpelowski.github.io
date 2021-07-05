@@ -104,7 +104,8 @@ body {
 
 .skills{
   background-color: rgb(34, 116, 238);
-  min-height: 600px;
+  min-height: 300px;
+  max-height: 700px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows:repeat(3, 1fr) ;
