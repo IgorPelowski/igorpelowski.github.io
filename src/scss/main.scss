@@ -88,7 +88,7 @@ a:-webkit-any-link {
     grid-column: 2;
     grid-row: 4;
     background-color: rgb(0, 89, 255);
-    color: wheat;
+    color: wheat !important;
     text-align: center;
     position: relative;
     outline: none;
@@ -165,21 +165,93 @@ a:-webkit-any-link {
     }
   }
 }
+.githublogo{
+  max-width: 30px;
+  max-height: 30px;
+  grid-row: 3;
+  padding-left: 10%;
+  
+  
+}
 .projects{
   background-color: whitesmoke;
   min-height: 600px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:repeat(3, 1fr) ;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows:repeat(8, 1fr) ;
   align-items: center;
   justify-items: center;
   &__title{
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3/8;
+    text-align: center;
   }
   &__description{
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 3/8;
+    text-align: center;
+  }
+  &__container{
+    grid-row: 3/8;
+    grid-column: 2/9;
+    
+    min-height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows:repeat(7, 1fr) ;
+      &__footer{
+        color: rgb(124, 120, 111);
+        padding-left: 2%;
+        padding-top: 1%;
+        background-color: rgb(31, 28, 28);
+        grid-row: 1/2;
+        border-radius: 20px;
+      }
+      &__box1{
+      grid-row: 1/4;
+      grid-column: 1/5;
+      border-radius: 20px;
+      min-height: 100%;
+      min-width: 100%;
+      background-color:  rgb(43, 42, 41);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows:repeat(8, 1fr) ;
+      }
+      &__box2{
+        grid-row: 1/4;
+      grid-column: 6/10;
+      border-radius: 20px;
+      min-height: 100%;
+      min-width: 100%;
+      background-color:  rgb(43, 42, 41);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows:repeat(8, 1fr) ;
+      }
+      &__box3{
+        grid-row: 5/8;
+      grid-column: 1/5;
+      border-radius: 20px;
+      min-height: 100%;
+      min-width: 100%;
+      background-color:  rgb(43, 42, 41);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows:repeat(8, 1fr) ;
+      }
+      &__box4{
+        grid-row: 5/8;
+      grid-column: 6/10;
+      border-radius: 20px;
+      min-height: 100%;
+      min-width: 100%;
+      background-color: rgb(43, 42, 41);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows:repeat(8, 1fr) ;
+      }
   }
 
 
