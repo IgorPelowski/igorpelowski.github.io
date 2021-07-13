@@ -166,16 +166,17 @@ a:-webkit-any-link {
   }
 }
 .githublogo{
-  max-width: 30px;
-  max-height: 30px;
-  grid-row: 3;
-  padding-left: 10%;
+  max-width: 50px;
+  max-height: 50px;
+  grid-row: 3/4;
+  padding-left: 9%;
   
   
 }
 .projects{
   background-color: whitesmoke;
   min-height: 600px;
+  
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows:repeat(8, 1fr) ;
@@ -207,50 +208,84 @@ a:-webkit-any-link {
         background-color: rgb(31, 28, 28);
         grid-row: 1/2;
         border-radius: 20px;
+        max-height: 80%;
       }
       &__box1{
       grid-row: 1/4;
       grid-column: 1/5;
       border-radius: 20px;
-      min-height: 100%;
+      max-height: 400px;
       min-width: 100%;
       background-color:  rgb(43, 42, 41);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows:repeat(8, 1fr) ;
+      grid-template-rows:repeat(10, 1fr) ;
       }
       &__box2{
         grid-row: 1/4;
       grid-column: 6/10;
       border-radius: 20px;
-      min-height: 100%;
+      max-height: 400px;
       min-width: 100%;
       background-color:  rgb(43, 42, 41);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows:repeat(8, 1fr) ;
+      grid-template-rows:repeat(10, 1fr) ;
       }
       &__box3{
         grid-row: 5/8;
       grid-column: 1/5;
       border-radius: 20px;
-      min-height: 100%;
+      max-height: 400px;
       min-width: 100%;
       background-color:  rgb(43, 42, 41);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows:repeat(8, 1fr) ;
+      grid-template-rows:repeat(10, 1fr) ;
       }
       &__box4{
         grid-row: 5/8;
       grid-column: 6/10;
       border-radius: 20px;
-      min-height: 100%;
+      max-height: 400px;
       min-width: 100%;
       background-color: rgb(43, 42, 41);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows:repeat(8, 1fr) ;
+      grid-template-rows:repeat(10, 1fr) ;
+      }
+      &__title{
+        color: rgb(158, 157, 157);
+        grid-row: 5/6;
+        padding-left: 15%;
+        padding-right: 5%;
+        font-family: 'Roboto Mono', monospace;
+      }
+      &__description{
+        color: rgb(158, 157, 157);
+        grid-row: 6/7;
+        padding-left: 15%;
+        padding-right: 5%;
+        font-family: 'Roboto Mono', monospace;
+      }
+      &__demo{
+        color: rgb(158, 157, 157);
+        grid-row: 7/8;
+        padding-left: 15%;
+        padding-right: 5%;
+        font-family: 'Roboto Mono', monospace;
+      }
+      &__github{
+        color: rgb(158, 157, 157);
+        grid-row: 8/9;
+        padding-left: 15%;
+        padding-right: 5%;
+        font-family: 'Roboto Mono', monospace;
+      }
+      a:-webkit-any-link {
+        color: rgb(4, 179, 170);
+        cursor: pointer;
+        text-decoration: none;
       }
   }
 
