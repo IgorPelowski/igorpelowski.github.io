@@ -49,7 +49,33 @@ body {
     }
     
   }
-  
+  @keyframes blink {
+    0% {
+        opacity:0;
+        
+    }
+    50% {
+        opacity:1;
+        
+        
+    }
+    75%{
+        opacity:1;
+        
+    }
+    
+    100% {
+        opacity:1;
+        
+    }
+  }
+
+  .hero__image__hello {
+    -moz-animation: blink normal 3s 1 ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 3s 1 ease-in-out; /* Webkit */
+    -ms-animation: blink normal 3s 1 ease-in-out; /* IE */
+    animation: blink normal 3s 1 ease-in-out;
+  }
 
   .hero__image__hello::before{
       
@@ -186,11 +212,13 @@ a:-webkit-any-link {
     grid-row: 1;
     grid-column: 3/8;
     text-align: center;
+    
   }
   &__description{
     grid-row: 2;
     grid-column: 3/8;
     text-align: center;
+    align-self: baseline;
   }
   &__container{
     grid-row: 3/8;
@@ -294,7 +322,7 @@ a:-webkit-any-link {
 .contact{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:repeat(3, 1fr) ;
+  grid-template-rows:repeat(4, 1fr) ;
   min-height: 400px;
   background-color: rgb(218, 218, 233);
   align-items: center;
@@ -306,5 +334,23 @@ a:-webkit-any-link {
   &__description{
    grid-row: 2;
    grid-column: 2; 
+  }
+  &__mail{
+    grid-row: 4/5;
+  }
+  &__icon1{
+    grid-row: 3/4;
+  }
+  &__icon2{
+    grid-row: 3/4;
+    grid-column: 2;
+  }
+  &__icon3{
+    grid-row: 3/4;
+    grid-column: 3;
+  }
+  &__githubicon{
+    max-height: 50px;
+    max-width: 50px;
   }
 }
