@@ -208,7 +208,7 @@ a:-webkit-any-link {
         background-color: rgb(31, 28, 28);
         grid-row: 1/2;
         border-radius: 20px;
-        max-height: 80%;
+        max-height: 70%;
       }
       &__box1{
       grid-row: 1/4;
@@ -263,21 +263,21 @@ a:-webkit-any-link {
       }
       &__description{
         color: rgb(158, 157, 157);
-        grid-row: 6/7;
+        grid-row: 6/8;
         padding-left: 15%;
         padding-right: 5%;
         font-family: 'Roboto Mono', monospace;
       }
       &__demo{
         color: rgb(158, 157, 157);
-        grid-row: 7/8;
+        grid-row: 8/9;
         padding-left: 15%;
         padding-right: 5%;
         font-family: 'Roboto Mono', monospace;
       }
       &__github{
         color: rgb(158, 157, 157);
-        grid-row: 8/9;
+        grid-row: 9/10;
         padding-left: 15%;
         padding-right: 5%;
         font-family: 'Roboto Mono', monospace;
